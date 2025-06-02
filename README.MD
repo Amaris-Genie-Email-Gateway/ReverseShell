@@ -48,8 +48,8 @@
 2. **Build the payload and listener**:
 
    ```bash
-   cargo build --bin reverseshell_payload
-   cargo build --bin reverseshell_listener
+   cargo build --release --bin reverseshell_payload
+   cargo build --release --bin reverseshell_listener
    ```
 
 3. **Run the payload on the target machine**, and the listener on your local (attacker) machine.
